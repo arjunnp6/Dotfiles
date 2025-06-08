@@ -26,7 +26,7 @@
         },
         "custom/notification": {
             "tooltip": false,
-            "format": "",
+            "format": "  ",
             "on-click": "swaync-client -t -sw",
             "escape": true
         },
@@ -38,7 +38,7 @@
                 "spotify": "<span color='#1DB954'> </span>",
                 "firefox": "<span color= '#FFA530'> </span>",
                 "chromium": "",
-                "vlc": "󰕼",
+                "vlc": "<span color= '#FF9700'>󰕼 </span>",
                 "mpv": "󰐹"
             },
             "dynamic-len": 20,
@@ -107,7 +107,7 @@
                 "alsa_output.pci-0000_00_1f.3.analog-stereo": " ",
                 "alsa_output.pci-0000_00_1f.3.analog-stereo-muted": "  ",
                 "headphone": " 󰋋 ",
-                "default": " "
+                "default": ""
                 },
             "scroll-step": 1,
             "on-click": "pavucontrol",
