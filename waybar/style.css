@@ -177,6 +177,7 @@ tooltip {
     min-width: 0px;
     opacity: 0;
     background-image: none;
+    background-color: @color7;
     border: none;
     box-shadow: none;
 }
@@ -184,12 +185,13 @@ tooltip {
     min-height: 2px;
     min-width: 80px;
     border-radius: 5px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(65, 65, 65);
 }
 #pulseaudio-slider highlight {
     min-width: 10px;
+    min-height: 7px;
     border-radius: 5px;
-    background-color: green;
+    background-color: @color5;
 }
 #mpris {
 font-size: 15px;
