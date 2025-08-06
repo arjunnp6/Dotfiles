@@ -87,7 +87,7 @@
         },
         "pulseaudio/slider": {
             "min": 0,
-            "max": 200,
+            "max": 150,
             "orientation": "horizontal"
         },
         "network": {
@@ -146,7 +146,7 @@
             ],
         },
         "custom/pacman": {
-            "format": "󰅢   {}",
+            "format": "󰅢  {} ",
             "interval": 30,   
             "exec": "checkupdates | wc -l",
             "exec-if": "exit 0",
