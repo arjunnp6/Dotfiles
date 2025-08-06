@@ -61,17 +61,17 @@ tooltip {
 #workspaces button {
     all:unset;
     padding: 0px 5px;
-    color: rgb(204, 200, 186);
+    color: @color7;
     transition: all .2s ease;
 }
 #workspaces button:hover {
-    color:rgba(0,0,0,0);
+    color: @color1;
     border: none;
     text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
     transition: all 1s ease;
 }
 #workspaces button.active {
-    border-bottom:2px solid #ffbe61;
+    border-bottom:2px solid @color15;
     color: white;
     text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
 }
@@ -136,7 +136,7 @@ tooltip {
     transition: all .3s ease; 
 }
 #custom-expand:hover{
-    color:rgba(255,255,255,.2);
+    color: alpha(@background,.2);
     text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
 }
 #custom-colorpicker{
@@ -185,7 +185,7 @@ tooltip {
     min-height: 2px;
     min-width: 80px;
     border-radius: 5px;
-    background-color: rgb(65, 65, 65);
+    background-color: @color9;
 }
 #pulseaudio-slider highlight {
     min-width: 10px;
@@ -235,7 +235,7 @@ font-size: 15px;
   color: @color5;
 }
 #custom-screenshot {
-    color: #DECFC5;
+    color: @color7;
     padding: 0 10px;
 }
 /* Mic module styling */
