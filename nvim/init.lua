@@ -76,6 +76,7 @@ require("plugins.fzf-lua")
 require("plugins.nvim-tree")
 require("plugins.treesitter")
 require("plugins.twilight")
+require("plugins.live-server")
 require("plugins.which-key")
 end, 100)
 
