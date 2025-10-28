@@ -40,8 +40,9 @@ Plug('MeanderingProgrammer/render-markdown.nvim') --render md inline
 Plug('emmanueltouzery/decisive.nvim') --view csv files
 Plug('folke/twilight.nvim') --surrounding dim
 Plug('windwp/nvim-ts-autotag') -- auto-close HTML tags
-Plug('neovim/nvim-lspconfig')              -- Main LSP client
-
+Plug('mason-org/mason.nvim') --mason
+Plug('mason-org/mason-lspconfig.nvim') --mason lsp config
+Plug('neovim/nvim-lspconfig') --Main LSP Client
 vim.call('plug#end')
 
 -- move config and plugin config to alternate files
@@ -79,6 +80,12 @@ require("plugins.treesitter")
 require("plugins.twilight")
 require("plugins.live-server")
 require("plugins.which-key")
+require("plugins.lsp-config")
 end, 100)
+require("mason").setup()
+require("mason-lspconfig").setup({
+	ensure_installed = { "lua_ls", "tsserver" }
+})
 
+-- LSPs
 load_theme()

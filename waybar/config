@@ -30,26 +30,25 @@
             "on-click": "swaync-client -t -sw",
             "escape": true
         },
-        "mpris": {
-            "format": "{player_icon} {dynamic}",
-            "format-paused": "{player_icon} {dynamic}",
-            "player-icons": {
-                "default": "▶",
-                "spotify": "<span color='#1DB954'> </span>",
-                "firefox": "<span color= '#FFA530'> </span>",
-                "chromium": "",
-                "vlc": "<span color= '#FF9700'>󰕼 </span>",
-                "mpv": "󰐹"
-            },
-            "dynamic-len": 20,
-            "dynamic-importance-order": ["title", "artist", "album"],
-            "dynamic-order": ["title", "artist"],
-            "dynamic-fixed-len": true,
-            "dynamic-sep": " - ",
-            "interval": 1,
-            "tooltip-format": "{player}: {artist} - {title} ({album})",
-            "on-click": "playerctl play-pause"
-        },
+       "mpris": {
+			"format": "{player_icon} {dynamic}",
+			"format-paused": "{player_icon} {dynamic}",
+			"player-icons": {
+			"default": "▶",
+			"spotify": "<span color='#1DB954'> </span>",
+			"firefox": "<span color='#FFA530'> </span>",
+			"vlc": "<span color='#FF9700'>󰕼 </span>",
+				"mpv": "󰐹"
+		},
+			"dynamic-len": 30,
+			"dynamic-fixed-len": true,
+			"dynamic-sep": " - ",
+			"interval": 0.5,
+			"dynamic-importance-order": ["title", "artist", "album"],
+			"dynamic-order": ["title", "artist"],
+			"tooltip-format": "{player}: {artist} - {title} ({album})",
+			"on-click": "playerctl play-pause"
+		},
         "custom/media-prev": {
             "format": "󰒮",
             "on-click": "playerctl previous",
