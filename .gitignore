@@ -22,6 +22,8 @@
 !install_scripts/**
 !dotfiles/
 !dotfiles/**
+!rofi/
+!rofi/**
 
 # allow specific files
 !README.md
