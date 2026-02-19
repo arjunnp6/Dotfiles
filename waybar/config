@@ -43,7 +43,7 @@
 			"dynamic-len": 30,
 			"dynamic-fixed-len": true,
 			"dynamic-sep": " - ",
-			"interval": 0.5,
+			"interval": 1,
 			"dynamic-importance-order": ["title", "artist", "album"],
 			"dynamic-order": ["title", "artist"],
 			"tooltip-format": "{player}: {artist} - {title} ({album})",
